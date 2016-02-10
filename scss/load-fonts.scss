@@ -1,0 +1,23 @@
+@font-face {
+	font-family: 'Mohave';
+	src: url('../fonts/Mohave.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/Mohave.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/Mohave.woff') format('woff'), /* Modern Browsers */
+	url('../fonts/Mohave.ttf')  format('truetype'), /* Safari, Android, iOS */
+	url('../fonts/Mohave.svg#3b03e6b824a93af237867d68dcecdeb9') format('svg'); /* Legacy iOS */
+
+	font-style:   normal;
+	font-weight:  400;
+}
+
+@font-face {
+	font-family: 'Mohave';
+	src: url('../fonts/Mohave-Bold.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/Mohave-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/Mohave-Bold.woff') format('woff'), /* Modern Browsers */
+	url('../fonts/Mohave-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+	url('../fonts/Mohave-Bold.svg#478699ea99c9a4c3d27d5719feced985') format('svg'); /* Legacy iOS */
+
+	font-style:   normal;
+	font-weight:  700;
+}
