@@ -21,3 +21,19 @@
 	font-style:   normal;
 	font-weight:  700;
 }
+
+$font-heading: 'Mohave', sans-serif;
+$font-heading-weight: 700;
+
+$font-stack: 'Mohave', sans-serif;
+
+$font-size-base: 12px;
+$font-size-navigation: 16px;
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-heading;
+	font-weight: $font-heading-weight;
+}
+body {
+	font-family: $font-stack;
+}
