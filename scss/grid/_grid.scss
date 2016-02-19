@@ -4,6 +4,15 @@
 *
 */
 
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+
 @media only screen and (min-width : 1200px) {
 	.container {
 		width: 1024px;
@@ -54,9 +63,9 @@
 }
 
 @media only screen and (max-width : 559px) {
-	.one-eighth, .three-eighths, .five-eighths, .seven-eighths, .one-seventh, 
-	.two-sevenths, .three-sevenths, .four-sevenths, .five-sevenths, .six-sevenths, 
-	.one-sixth, .five-sixths, .one-fifth, .two-fifths, .three-fifths, .four-fifths, 
+	.one-eighth, .three-eighths, .five-eighths, .seven-eighths, .one-seventh,
+	.two-sevenths, .three-sevenths, .four-sevenths, .five-sevenths, .six-sevenths,
+	.one-sixth, .five-sixths, .one-fifth, .two-fifths, .three-fifths, .four-fifths,
 	.one-fourth, .three-fourths, .one-third, .two-thirds, .one-half, .one {
 		width: 100% !important;
 	}

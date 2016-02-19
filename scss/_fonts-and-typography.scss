@@ -34,6 +34,24 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $font-heading;
 	font-weight: $font-heading-weight;
 }
+h1 {
+	font-size: 3.5 * $font-size-base;
+}
+h2 {
+	font-size: 3 * $font-size-base;
+}
+h3 {
+	font-size: 2.5 * $font-size-base;
+}
+h4 {
+	font-size: 2 * $font-size-base;
+}
+h5 {
+	font-size: 1.5 * $font-size-base;
+}
+h6 {
+	font-size: 1 * $font-size-base;
+}
 body {
 	font-family: $font-stack;
 }
