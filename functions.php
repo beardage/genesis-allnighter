@@ -28,8 +28,8 @@ add_theme_support( 'genesis-footer-widgets', 3 );
 
 
 remove_action('genesis_header', 'genesis_do_header');
-add_action('genesis_before', 'allnighter_do_header');
-function allnighter_do_header() {
+add_action('genesis_before', 'an_do_header');
+function an_do_header() {
 	?>
 	<div class="site-header">
 		<div class="logo left">
@@ -39,7 +39,6 @@ function allnighter_do_header() {
 		<ul class="navigation right">
 			<li><a href="#contact">contact</a></li>
 			<li><a href="#portfolio">portfolio</a></li>
-
 		</ul>
 	</div>
 	<?php

@@ -1,7 +1,7 @@
 
-@import "0-variables";
-@import "1-grid";
-@import "2-load-fonts";
-@import "3-typography";
-@import "4-header";
-@import "5-layout";
+@import "variables";
+@import "grid/grid";
+
+@import "fonts-and-typography";
+@import "header";
+@import "layout";
