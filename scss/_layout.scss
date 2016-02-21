@@ -17,10 +17,10 @@ body {
 	padding: 0;
 }
 
-section {
-	padding-left: 12%;
-	padding-right: 12%;
-}
+//section {
+//	padding-left: 12%;
+//	padding-right: 12%;
+//}
 
 
 
@@ -66,19 +66,12 @@ section.section-portfolio {
 			padding: $length-large;
 
 			color: $color-light;
-			&:nth-child(3n+1) {
-				// 1, 4, 7
-				background-color: $color-variant-1;
-			}
-			&:nth-child(3n+2) {
-				// 2, 5, 8
-				background-color: $color-variant-2;
-			}
+			background-color: $color-variant-3;
+			border: 1px solid $color-variant-2;
 			&:nth-child(3n) {
 				// 3, 6, 9
-				background-color: $color-variant-3;
-
 				margin-right: 0;
+
 			}
 		}
 
