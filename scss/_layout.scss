@@ -12,7 +12,7 @@ html {
 }
 
 body {
-	background-color: $black;
+	background-color: $color-dark;
 	margin: 0;
 	padding: 0;
 }
@@ -42,7 +42,7 @@ section {
 
 		text-align: center;
 		h1 {
-			color: $white;
+			color: $color-light;
 			font-size: 40px;
 		}
 	}
@@ -51,7 +51,8 @@ section {
 section.section-portfolio {
 	.section-headline {
 		text-align: center;
-		color: $white;
+		color: $color-light;
+		margin-bottom: $length-large;
 	}
 	.portfolio-items {
 		display: flex;
@@ -62,10 +63,21 @@ section.section-portfolio {
 			flex: 1 calc(33.33% - #{(2 * $length-small) / 3});
 			margin-right: $length-small;
 			margin-bottom: $length-small;
-
-			background-color: $white;
 			padding: $length-large;
+
+			color: $color-light;
+			&:nth-child(3n+1) {
+				// 1, 4, 7
+				background-color: $color-variant-1;
+			}
+			&:nth-child(3n+2) {
+				// 2, 5, 8
+				background-color: $color-variant-2;
+			}
 			&:nth-child(3n) {
+				// 3, 6, 9
+				background-color: $color-variant-3;
+
 				margin-right: 0;
 			}
 		}

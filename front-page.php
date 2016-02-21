@@ -21,7 +21,10 @@ function an_do_portfolio () {
 	<section class="section-portfolio" id="portfolio">
 		<h2 class="section-headline">Portfolio</h2>
         <div class="portfolio-items">
-			<div class="portfolio-item" style="background-image:url(http://placehold.it/350x350);">
+			<div class="portfolio-item" style="">
+				<div class"image" style="background-image:url(background-image:url(http://placehold.it/350x350);)">
+
+				</div>
 				<div class="overlay">
 					<h5>Portfolio Item #1</h5>
 					<div class="portfolio-links">
@@ -31,7 +34,10 @@ function an_do_portfolio () {
 					</div>
 				</div>
 			</div>
-			<div class="portfolio-item" style="background-image:url(http://placehold.it/350x350);">
+			<div class="portfolio-item" style="">
+				<div class"image" style="background-image:url(background-image:url(http://placehold.it/350x350);)">
+
+				</div>
 				<div class="overlay">
 					<h5>Portfolio Item #2</h5>
 					<div class="portfolio-links">
@@ -41,7 +47,10 @@ function an_do_portfolio () {
 					</div>
 				</div>
 			</div>
-			<div class="portfolio-item" style="background-image:url(http://placehold.it/350x350);">
+			<div class="portfolio-item" style="">
+				<div class"image" style="background-image:url(background-image:url(http://placehold.it/350x350);)">
+
+				</div>
 				<div class="overlay">
 					<h5>Portfolio Item #3</h5>
 					<div class="portfolio-links">

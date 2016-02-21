@@ -5,10 +5,10 @@
 	left: 20px;
 	right: 20px;
 	height: auto;
-	//border-bottom: 1px solid $white;
+	//border-bottom: 1px solid $color-light;
 	.logo {
 		padding: 20px 0;
-		color: $white;
+		color: $color-light;
 		font-family: $font-heading;
 		font-weight: $font-heading-weight;
 		font-size: 20px;
@@ -25,7 +25,7 @@
 			display: block;
 			cursor: pointer;
 			padding: 25px 10px;
-			color: $white;
+			color: $color-light;
 			transition: color .3s ease-in-out;
 			font-family: $font-heading;
 			font-weight: $font-heading-weight;
