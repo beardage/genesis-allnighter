@@ -31,10 +31,10 @@ function an_do_portfolio () {
 	   $portfolioItems->the_post();
 	   ?>
 	    <a class="portfolio-item" href="<?php the_permalink(); ?>" style="">
-			<div class"image" style="background-image:url(background-image:url(http://placehold.it/350x350);)"></div>
+			<div class"image" style="background-image:url(background-image:url(<?php the_field('teaser_image'); ?>);)"></div>
 			<div class="overlay">
 			   <h5><?php the_title(); ?></h5>
-			   <p><?php the_excerpt(); ?></p>
+			   <p><?php the_field('teaser_description'); ?></p>
 			   <!-- <div class="portfolio-links">
 				   <a class="link-www" href="#">
 					   <i class="fa fa-globe"></i> View Website

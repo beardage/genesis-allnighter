@@ -21,7 +21,7 @@ function an_portfolio_cpt() {
     'description'   => 'portfolio items',
     'public'        => true,
     'menu_position' => 5,
-    'supports'      => array( 'title', 'editor', 'thumbnail', 'excerpt', 'comments' ),
+    'supports'      => array( 'title', 'editor', 'thumbnail' ),
     'has_archive'   => true,
   );
   register_post_type( 'portfolio', $args );
