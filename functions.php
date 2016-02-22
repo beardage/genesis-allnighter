@@ -6,6 +6,9 @@ require_once( get_template_directory() . '/lib/init.php' );
 define( 'CHILD_THEME_NAME', 'Allnighter' );
 define( 'CHILD_THEME_URL', 'http://www.kylebeard.com/' );
 
+// Require the Lib stuff
+require_once( get_stylesheet_directory() . '/lib/cpts/portfolio-cpt.php' );
+
 // Add Viewport meta tag for mobile browsers
 add_action( 'genesis_meta', 'sample_viewport_meta_tag' );
 function sample_viewport_meta_tag() {

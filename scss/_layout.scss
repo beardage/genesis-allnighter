@@ -17,10 +17,10 @@ body {
 	padding: 0;
 }
 
-//section {
-//	padding-left: 12%;
-//	padding-right: 12%;
-//}
+section {
+	padding-left: 12%;
+	padding-right: 12%;
+}
 
 
 
@@ -68,6 +68,10 @@ section.section-portfolio {
 			color: $color-light;
 			background-color: $color-variant-3;
 			border: 1px solid $color-variant-2;
+			transition: background-color 200ms ease-in-out;
+			&:hover {
+				background-color: $color-variant-2;
+			}
 			&:nth-child(3n) {
 				// 3, 6, 9
 				margin-right: 0;

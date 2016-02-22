@@ -27,6 +27,7 @@ function an_do_portfolio () {
 				</div>
 				<div class="overlay">
 					<h5>Portfolio Item #1</h5>
+					<p>Design / Development</p>
 					<div class="portfolio-links">
 						<a class="link-www" href="#">
 							<i class="fa fa-globe"></i> View Website
@@ -40,6 +41,7 @@ function an_do_portfolio () {
 				</div>
 				<div class="overlay">
 					<h5>Portfolio Item #2</h5>
+					<p>Branding</p>
 					<div class="portfolio-links">
 						<a class="link-www" href="#">
 							<i class="fa fa-globe"></i> View Website
@@ -53,6 +55,7 @@ function an_do_portfolio () {
 				</div>
 				<div class="overlay">
 					<h5>Portfolio Item #3</h5>
+					<p>UX / Design / Front-End Development</p>
 					<div class="portfolio-links">
 						<a class="link-www" href="#">
 							<i class="fa fa-globe"></i> View Website
@@ -60,45 +63,7 @@ function an_do_portfolio () {
 					</div>
 				</div>
 			</div>
-			<div class="portfolio-item" style="">
-				<div class"image" style="background-image:url(background-image:url(http://placehold.it/350x350);)">
 
-				</div>
-				<div class="overlay">
-					<h5>Portfolio Item #1</h5>
-					<div class="portfolio-links">
-						<a class="link-www" href="#">
-							<i class="fa fa-globe"></i> View Website
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="portfolio-item" style="">
-				<div class"image" style="background-image:url(background-image:url(http://placehold.it/350x350);)">
-
-				</div>
-				<div class="overlay">
-					<h5>Portfolio Item #2</h5>
-					<div class="portfolio-links">
-						<a class="link-www" href="#">
-							<i class="fa fa-globe"></i> View Website
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="portfolio-item" style="">
-				<div class"image" style="background-image:url(background-image:url(http://placehold.it/350x350);)">
-
-				</div>
-				<div class="overlay">
-					<h5>Portfolio Item #3</h5>
-					<div class="portfolio-links">
-						<a class="link-www" href="#">
-							<i class="fa fa-globe"></i> View Website
-						</a>
-					</div>
-				</div>
-			</div>
 		</div>
 	</section>
 	<?php
