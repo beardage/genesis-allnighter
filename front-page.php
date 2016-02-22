@@ -17,53 +17,39 @@ function an_do_hero() {
 }
 
 function an_do_portfolio () {
+	$args = array(
+	 'post_type' => 'portfolio',
+   );
+   $portfolioItems = new WP_Query( $args );
+   ?>
+   <section class="section-portfolio" id="portfolio">
+	   <h2 class="section-headline">Portfolio</h2>
+	   <div class="portfolio-items">
+   <?php
+   if( $portfolioItems->have_posts() ) {
+	 while( $portfolioItems->have_posts() ) {
+	   $portfolioItems->the_post();
+	   ?>
+	    <a class="portfolio-item" href="<?php the_permalink(); ?>" style="">
+			<div class"image" style="background-image:url(background-image:url(http://placehold.it/350x350);)"></div>
+			<div class="overlay">
+			   <h5><?php the_title(); ?></h5>
+			   <p><?php the_excerpt(); ?></p>
+			   <!-- <div class="portfolio-links">
+				   <a class="link-www" href="#">
+					   <i class="fa fa-globe"></i> View Website
+				   </a>
+			   </div> -->
+			</div>
+	    </a>
+	   <?php
+	 }
+   }
+   else {
+	 echo 'No portfolio items found :(';
+   }
+
 	?>
-	<section class="section-portfolio" id="portfolio">
-		<h2 class="section-headline">Portfolio</h2>
-        <div class="portfolio-items">
-			<div class="portfolio-item" style="">
-				<div class"image" style="background-image:url(background-image:url(http://placehold.it/350x350);)">
-
-				</div>
-				<div class="overlay">
-					<h5>Portfolio Item #1</h5>
-					<p>Design / Development</p>
-					<div class="portfolio-links">
-						<a class="link-www" href="#">
-							<i class="fa fa-globe"></i> View Website
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="portfolio-item" style="">
-				<div class"image" style="background-image:url(background-image:url(http://placehold.it/350x350);)">
-
-				</div>
-				<div class="overlay">
-					<h5>Portfolio Item #2</h5>
-					<p>Branding</p>
-					<div class="portfolio-links">
-						<a class="link-www" href="#">
-							<i class="fa fa-globe"></i> View Website
-						</a>
-					</div>
-				</div>
-			</div>
-			<div class="portfolio-item" style="">
-				<div class"image" style="background-image:url(background-image:url(http://placehold.it/350x350);)">
-
-				</div>
-				<div class="overlay">
-					<h5>Portfolio Item #3</h5>
-					<p>UX / Design / Front-End Development</p>
-					<div class="portfolio-links">
-						<a class="link-www" href="#">
-							<i class="fa fa-globe"></i> View Website
-						</a>
-					</div>
-				</div>
-			</div>
-
 		</div>
 	</section>
 	<?php

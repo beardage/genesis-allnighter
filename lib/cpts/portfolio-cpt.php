@@ -2,9 +2,9 @@
 
 function an_portfolio_cpt() {
   $labels = array(
-    'name'               => _x( 'Portfolio' ),
-    'singular_name'      => _x( 'Portfolio Item' ),
-    'add_new'            => _x( 'Add New' ),
+    'name'               => __( 'Portfolio' ),
+    'singular_name'      => __( 'Portfolio Item' ),
+    'add_new'            => __( 'Add New' ),
     'add_new_item'       => __( 'Add New Portfolio Item' ),
     'edit_item'          => __( 'Edit Portfolio Item' ),
     'new_item'           => __( 'New Portfolio Item' ),
