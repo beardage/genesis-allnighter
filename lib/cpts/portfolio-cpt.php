@@ -22,7 +22,7 @@ function an_portfolio_cpt() {
     'public'        => true,
     'menu_position' => 5,
     'supports'      => array( 'title', 'editor', 'thumbnail' ),
-    'has_archive'   => true,
+    'has_archive'   => false,
   );
   register_post_type( 'portfolio', $args );
 }
