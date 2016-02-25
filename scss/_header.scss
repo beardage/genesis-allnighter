@@ -14,11 +14,12 @@
 		font-size: 20px;
 		letter-spacing: 1px;
 	}
-	.navigation {
+	.genesis-nav-menu {
 		margin: 0;
+		float: right;
 		li {
-			float: right;
-			clear: left;
+			float: left;
+			clear: right;
 		}
 		li a{
 

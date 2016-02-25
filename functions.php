@@ -32,7 +32,8 @@ function allnighter_scripts_and_styles() {
 // Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
 
-
+// set up navigation
+remove_action( 'genesis_after_header', 'genesis_do_nav' );
 remove_action('genesis_header', 'genesis_do_header');
 add_action('genesis_before', 'an_do_header');
 function an_do_header() {
@@ -43,8 +44,9 @@ function an_do_header() {
 		</div>
 
 		<ul class="navigation right">
-			<li><a href="#contact">contact</a></li>
-			<li><a href="#portfolio">portfolio</a></li>
+			<?php genesis_do_nav();  ?>
+			<!-- <li><a href="#contact">contact</a></li>
+			<li><a href="#portfolio">portfolio</a></li> -->
 		</ul>
 	</div>
 	<?php
