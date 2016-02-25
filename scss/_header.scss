@@ -2,12 +2,12 @@
 	position: fixed;
 	z-index: 1000;
 	top: 0;
-	left: 20px;
-	right: 20px;
+	left: 0px;
+	right: 0px;
 	height: auto;
 	//border-bottom: 1px solid $color-light;
 	.logo {
-		padding: 20px 0;
+		padding: 15px 10px;
 		color: $color-light;
 		font-family: $font-heading;
 		font-weight: $font-heading-weight;
@@ -25,7 +25,7 @@
 
 			display: block;
 			cursor: pointer;
-			padding: 25px 10px;
+			padding: 20px 10px;
 			color: $color-light;
 			transition: color .3s ease-in-out;
 			font-family: $font-heading;
@@ -36,9 +36,6 @@
 			&:hover {
 				color: $brand-primary;
 			}
-		}
-		li:first-of-type a {
-			padding-right: 0;
 		}
 	}
 }
