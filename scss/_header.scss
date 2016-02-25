@@ -7,7 +7,7 @@
 	height: auto;
 	//border-bottom: 1px solid $color-light;
 	.logo {
-		padding: 15px 10px;
+		padding: .75*$length-medium $length-small;
 		color: $color-light;
 		font-family: $font-heading;
 		font-weight: $font-heading-weight;
@@ -25,7 +25,7 @@
 
 			display: block;
 			cursor: pointer;
-			padding: 20px 10px;
+			padding: $length-medium $length-small;
 			color: $color-light;
 			transition: color .3s ease-in-out;
 			font-family: $font-heading;
