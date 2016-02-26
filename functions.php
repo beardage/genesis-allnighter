@@ -28,6 +28,9 @@ function allnighter_scripts_and_styles() {
 
 
 
+// remove auto p tags
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
 
 // Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );

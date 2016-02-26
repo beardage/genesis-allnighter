@@ -8,6 +8,7 @@ remove_action('genesis_entry_header', 'genesis_do_post_title');
 remove_action('genesis_entry_header', 'genesis_post_info', 12);
 remove_action('genesis_entry_content', 'genesis_do_post_title');
 
+
 // add sections
 add_action('genesis_after_header', 'an_do_hero');
 add_action('genesis_after_header', 'an_do_portfolio');
