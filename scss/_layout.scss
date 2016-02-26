@@ -99,11 +99,11 @@ section.section-portfolio {
 		}
 		.project-credit {
 			text-align: center;
-			margin-bottom: $length-small;
+			margin-bottom: $length-tiny;
 		}
 		.project-technologies {
 			text-align: center;
-			margin-bottom: $length-small;
+			margin-bottom: $length-tiny;
 			color: $color-variant-1;
 		}
 		.website-link {
@@ -111,7 +111,7 @@ section.section-portfolio {
 			display: block;
 		}
 
-		.portfolio-image {
+		.portfolio-images {
 
 		}
 		.portfolio-description {
@@ -125,6 +125,12 @@ section.section-portfolio {
 					width: 50%;
 					margin-right: $length-medium;
 					margin-bottom: $length-medium;
+					&.one-of-two {
+						width: 24%;
+						&:nth-of-type(n+1) {
+							margin-right: 2%;
+						}
+					}
 				}
 			}
 		}
