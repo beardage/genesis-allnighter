@@ -40,11 +40,6 @@ function an_do_portfolio () {
 			<div class="overlay">
 			   <h5><?php the_title(); ?></h5>
 			   <p><?php the_field('teaser_description'); ?></p>
-			   <!-- <div class="portfolio-links">
-				   <a class="link-www" href="#">
-					   <i class="fa fa-globe"></i> View Website
-				   </a>
-			   </div> -->
 			</div>
 	    </a>
 	   <?php
