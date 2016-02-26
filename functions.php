@@ -33,7 +33,12 @@ remove_filter( 'the_content', 'wpautop' );
 remove_filter( 'the_excerpt', 'wpautop' );
 
 // Add support for 3-column footer widgets
-add_theme_support( 'genesis-footer-widgets', 3 );
+add_theme_support( 'genesis-footer-widgets', 1 );
+
+
+// no footer as of now
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+
 
 // set up navigation
 remove_action( 'genesis_after_header', 'genesis_do_nav' );

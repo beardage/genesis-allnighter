@@ -92,8 +92,28 @@ section.section-portfolio {
 		.entry-title {
 			text-align: center;
 			color: $color-light;
-			margin-top: $length-medium;
-			margin-bottom: $length-medium;
+			margin-top: $length-large;
+			margin-bottom: $length-large;
+		}
+	}
+	.section-portfolio-content {
+		.project-credit {
+
+		}
+		.project-technologies {
+
+		}
+		.portfolio-image {
+
+		}
+		.portfolio-description {
+			.project-subheadline {
+				margin-top: $length-medium;
+				margin-bottom: $length-medium;
+			}
+			.project-element {
+
+			}
 		}
 	}
 }
