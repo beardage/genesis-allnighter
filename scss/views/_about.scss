@@ -1,5 +1,14 @@
 
 // h3 font size for equal vertical placement in sections next to sections with a header
 .header-space {
-	font-size: 2.5 * $font-size-base;
+	font-size: 2 * $font-size-base;
+}
+
+.work-experience {
+	.work-title {
+		color: $color-light;
+	}
+	.work-timeline {
+		color: $color-muted;
+	}
 }

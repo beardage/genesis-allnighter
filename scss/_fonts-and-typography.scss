@@ -83,6 +83,7 @@ a {
 	}
 }
 
+// utility classes
 .text-right {
 	text-align: right;
 }
@@ -92,6 +93,16 @@ a {
 .text-center {
 	text-align: center;
 }
+
+// styling html style elements
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: 800;
+}
+
+
 
 // glitch effect for navigation. Shoutouts to chris coyier
 // https://css-tricks.com/glitch-effect-text-images-svg/
