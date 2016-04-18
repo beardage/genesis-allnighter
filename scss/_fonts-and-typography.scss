@@ -68,6 +68,7 @@ h6 {
 }
 body {
 	font-family: $font-stack;
+	color: $color-light;
 	line-height: 1.5;
 	p {
 		margin-bottom: $length-medium;
@@ -80,6 +81,16 @@ a {
 	&:hover {
 		color: $color-light;
 	}
+}
+
+.text-right {
+	text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
 }
 
 // glitch effect for navigation. Shoutouts to chris coyier
