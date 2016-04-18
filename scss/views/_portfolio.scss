@@ -1,0 +1,34 @@
+section.section-portfolio {
+	.section-headline {
+		text-align: center;
+		color: $color-light;
+		margin-bottom: $length-large;
+	}
+	.portfolio-items {
+		display: flex;
+		flex-wrap: wrap;
+
+		.portfolio-item {
+			width: calc(33.33% - #{(2 * $length-small) / 3}); // 1/3rd, minus 1/3 of two gutters
+			flex: 1 calc(33.33% - #{(2 * $length-small) / 3});
+			margin-right: $length-small;
+			margin-bottom: $length-small;
+			padding: $length-large;
+
+			color: $color-light;
+			text-decoration: none;
+			background-color: $color-variant-3;
+			border: 1px solid $color-variant-2;
+			transition: background-color 200ms ease-in-out;
+			&:hover {
+				background-color: $color-variant-2;
+			}
+			&:nth-child(3n) {
+				// 3, 6, 9
+				margin-right: 0;
+			}
+
+		}
+
+	}
+}
