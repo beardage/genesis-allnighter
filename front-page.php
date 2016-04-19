@@ -14,7 +14,7 @@ add_action('genesis_after_header', 'an_do_hero');
 add_action('genesis_after_header', 'an_do_portfolio');
 function an_do_hero() {
 	?>
-	<section class="hero" style="background-image:url(/wp-content/themes/genesis-allnighter/images/hero.jpg);">
+	<section class="hero" style="background-image:url(/wp-content/themes/genesis-allnighter/images/hero.png);">
 		<div class="hero-overlay">
 			<h1>ux / ui / front-end development</h1>
 		</div>
@@ -37,7 +37,7 @@ function an_do_portfolio () {
 	   $portfolioItems->the_post();
 	   ?>
 	    <a class="portfolio-item" href="<?php the_permalink(); ?>" style="">
-			<div class"image" style="background-image:url(background-image:url(<?php the_field('teaser_image'); ?>);)"></div>
+			<div class"image" style="background-image:url(<?php the_field('teaser_image'); ?>);"></div>
 			<div class="overlay">
 			   <h5><?php the_title(); ?></h5>
 			   <p><?php the_field('teaser_description'); ?></p>
