@@ -4,13 +4,7 @@
 *
 */
 
-.left {
-	float: left;
-}
 
-.right {
-	float: right;
-}
 
 
 
@@ -212,7 +206,19 @@
 	float: none;
 }
 
+// floaties
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
 // padding killers
+.p0 {
+	padding: 0;
+}
 .pt0 {
 	padding-top: 0;
 }
