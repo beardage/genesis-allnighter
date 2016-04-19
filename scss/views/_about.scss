@@ -8,15 +8,38 @@
 
 
 
-.section-information {
+.section-about {
 	// space it out
-	p + h4 {
-		margin-top: $length-large;
+	.resume-section {
+		margin-bottom: $length-large;
 	}
 	.work-title {
 		color: $color-light;
 	}
 	.work-timeline {
 		color: $color-muted;
+	}
+}
+
+.about-details {
+	@include when-size-is('handheld') {
+		.about-labels {
+			float: left;
+			width: 16.66%;
+		}
+		.about-values {
+			float: left;
+			width: 33.33%;
+		}
+	}
+	@include when-size-is('phone') {
+		.about-labels {
+			float: left;
+			width: 50%;
+		}
+		.about-values {
+			float: left;
+			width: 50%;
+		}
 	}
 }
