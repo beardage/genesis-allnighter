@@ -1,72 +1,8 @@
 /*
 *
-* McGriddle v.01
+* McGriddle v.03
 *
 */
-
-
-
-
-
-
-@media only screen and (min-width : 1200px) {
-	.container {
-		width: 1024px;
-		margin: 0 auto;
-	}
-}
-
-@media only screen and (min-width : 1024px) and (max-width : 1199px) {
-	.container {
-		width: 960px;
-		margin: 0 auto;
-	}
-}
-
-@media only screen and (min-width : 960px) and (max-width : 1023px) {
-	.container {
-		width: 920px;
-		margin: 0 auto;
-	}
-}
-
-@media only screen and (min-width : 720px) and (max-width : 959px) {
-	.container {
-		width: 680px;
-		margin: 0 auto;
-	}
-}
-
-@media only screen and (min-width : 560px) and (max-width : 719px) {
-	.container {
-		width: 520px;
-		margin: 0 auto;
-	}
-}
-
-@media only screen and (min-width : 370px) and (max-width : 559px) {
-	.container {
-		width: 320px;
-		margin: 0 auto;
-	}
-}
-
-@media only screen and (max-width : 369px) {
-	.container {
-		width: 300px;
-		margin: 0 auto;
-	}
-}
-
-@media only screen and (max-width : 559px) {
-	.one-eighth, .three-eighths, .five-eighths, .seven-eighths, .one-seventh,
-	.two-sevenths, .three-sevenths, .four-sevenths, .five-sevenths, .six-sevenths,
-	.one-sixth, .five-sixths, .one-fifth, .two-fifths, .three-fifths, .four-fifths,
-	.one-fourth, .three-fourths, .one-third, .two-thirds, .one-half, .one {
-		width: 100% !important;
-	}
-}
-
 
 .one-eighth {
 	width: 12.5%;
@@ -205,6 +141,44 @@
 	clear: both;
 	float: none;
 }
+
+
+
+// shoutout to sitepoint for this handy-dandy mixin
+// http://www.sitepoint.com/managing-responsive-breakpoints-sass/
+$breakpoints: (
+  'phone'  			: (min-width: 320px),
+  'tablet'  		: (min-width: 768px),
+  'small-desktop' 	: (min-width: 1024px),
+  'desktop'  		: (min-width: 1224px),
+  'large-desktop' 	: (min-width: 1824px)
+);
+@mixin when-size($name) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $name) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+@include when-size('tablet') {
+	.one-eighth, .three-eighths, .five-eighths, .seven-eighths, .one-seventh,
+	.two-sevenths, .three-sevenths, .four-sevenths, .five-sevenths, .six-sevenths,
+	.one-sixth, .five-sixths, .one-fifth, .two-fifths, .three-fifths, .four-fifths,
+	.one-fourth, .three-fourths, .one-third, .two-thirds, .one-half, .one {
+		width: 100% !important;
+	}
+}
+
+
 
 // floaties
 .left {
