@@ -1,11 +1,28 @@
+
+
 .site-header {
 	position: fixed;
 	z-index: 1000;
 	top: 0;
-	left: 0px;
-	right: 0px;
+	left: 0;
+	right: 0;
 	height: auto;
+	transition: bottom 300ms ease-in-out;
 	//border-bottom: 1px solid $color-light;
+	&:before {
+		content: " ";
+		background-color: $color-dark;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 100%;
+		z-index: -1;
+		transition: bottom 200ms ease-in-out;
+	}
+	> * {
+		z-index: 100;
+	}
 	.logo {
 		padding: .75*$length-medium $length-small;
 		color: $color-light;
@@ -42,6 +59,10 @@
 
 
 	}
+}
+
+.scrolled .site-header:before {
+	bottom: 0;
 }
 
 .entry-header {

@@ -179,18 +179,18 @@ $breakpoints: (
 
 // containers and shit
 
-section, #wrap {
+section, #wrap, .site-header {
 	padding-left: 12%;
 	padding-right: 12%;
 }
 @include when-size-is('large-desktop') {
-	section, #wrap {
+	section, #wrap, .site-header {
 		padding-left: 16%;
 		padding-right: 16%;
 	}
 }
 @include when-size-is('small-desktop') {
-	section, #wrap {
+	section, #wrap, .site-header {
 		padding-left: 6%;
 		padding-right: 6%;
 	}
@@ -203,7 +203,7 @@ section, #wrap {
 	.one-fourth, .three-fourths, .one-third, .two-thirds, .one-half, .one {
 		width: 100%;
 	}
-	section, #wrap {
+	section, #wrap, .site-header {
 		padding-left: 6%;
 		padding-right: 6%;
 	}
