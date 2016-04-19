@@ -9,6 +9,7 @@
 *
 */
 
+
 .one-eighth {
 	width: 12.5%;
 	float: left;
@@ -152,13 +153,15 @@
 // shoutout to sitepoint for this handy-dandy mixin
 // http://www.sitepoint.com/managing-responsive-breakpoints-sass/
 $breakpoints: (
-  'phone'  			: (min-width: 320px),
-  'tablet'  		: (min-width: 768px),
-  'small-desktop' 	: (min-width: 1024px),
-  'desktop'  		: (min-width: 1224px),
+  'phone'  			: (max-width: 767px),
+  'tablet'  		: (min-width: 768px) and (max-width: 1023px),
+  'handheld'		: (max-width: 1023px),
+  'computer'		: (min-width: 1024px),
+  'small-desktop' 	: (min-width: 1024px) and (max-width: 1223px),
+  'desktop'  		: (min-width: 1224px) and (max-width: 1823px),
   'large-desktop' 	: (min-width: 1824px)
 );
-@mixin when-size($name) {
+@mixin when-size-is($name) {
   // If the key exists in the map
   @if map-has-key($breakpoints, $name) {
     // Prints a media query based on the value
@@ -166,7 +169,6 @@ $breakpoints: (
       @content;
     }
   }
-
   // If the key doesn't exist in the map
   @else {
     @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
@@ -174,16 +176,37 @@ $breakpoints: (
   }
 }
 
-@include when-size('tablet') {
+
+
+section, #wrap {
+	padding-left: 12%;
+	padding-right: 12%;
+}
+@include when-size-is('large-desktop') {
+	section, #wrap {
+		padding-left: 16%;
+		padding-right: 16%;
+	}
+}
+@include when-size-is('small-desktop') {
+	section, #wrap {
+		padding-left: 6%;
+		padding-right: 6%;
+	}
+}
+@include when-size-is('handheld') {
+	// adjust grid classes to full width
 	.one-eighth, .three-eighths, .five-eighths, .seven-eighths, .one-seventh,
 	.two-sevenths, .three-sevenths, .four-sevenths, .five-sevenths, .six-sevenths,
 	.one-sixth, .five-sixths, .one-fifth, .two-fifths, .three-fifths, .four-fifths,
 	.one-fourth, .three-fourths, .one-third, .two-thirds, .one-half, .one {
 		width: 100% !important;
 	}
+	section, #wrap {
+		padding-left: 6%;
+		padding-right: 6%;
+	}
 }
-
-
 
 // floaties
 .left {
