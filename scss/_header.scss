@@ -18,7 +18,7 @@
 		left: 0;
 		bottom: 100%;
 		z-index: -1;
-		transition: bottom 200ms ease-in-out;
+		transition: bottom 250ms ease-in-out;
 	}
 	> * {
 		z-index: 100;
@@ -30,6 +30,13 @@
 		font-weight: $font-heading-weight;
 		font-size: 20px;
 		letter-spacing: 1px;
+		a {
+			color: $color-light;
+			&:hover {
+				@include textGlitch("glitch", 9, $color-light, $color-dark, $color-variant-1, $color-variant-2, 115, 20);
+			}
+
+		}
 	}
 	.genesis-nav-menu {
 		margin: 0;

@@ -49,13 +49,11 @@ function an_do_header() {
 	?>
 	<div class="site-header">
 		<div class="logo left">
-			kylebeard //
+			<a href="/" data-text="kylebeard //">kylebeard //</a>
 		</div>
 
 		<ul class="navigation right">
 			<?php genesis_do_nav();  ?>
-			<!-- <li><a href="#contact">contact</a></li>
-			<li><a href="#portfolio">portfolio</a></li> -->
 		</ul>
 	</div>
 	<?php
