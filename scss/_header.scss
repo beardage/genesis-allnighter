@@ -24,7 +24,7 @@
 		z-index: 100;
 	}
 	.logo {
-		padding: .75*$length-medium $length-small;
+		padding: (.75 * $length-medium) $length-small;
 		color: $color-light;
 		font-family: $font-heading;
 		font-weight: $font-heading-weight;
@@ -33,7 +33,7 @@
 		a {
 			color: $color-light;
 			&:hover {
-				@include textGlitch("glitch", 9, $color-light, $color-dark, $color-variant-1, $color-variant-2, 115, 20);
+				@include textGlitch("glitch", 9, $color-light, $color-dark, $color-variant-1, $color-variant-2, 137, 20);
 			}
 
 		}
