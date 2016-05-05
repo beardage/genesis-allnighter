@@ -24,7 +24,7 @@
 		z-index: 100;
 	}
 	.logo {
-		padding: (.75 * $length-medium) $length-small;
+		padding: (.75 * $length-medium) $length-small (.75 * $length-medium) 0;
 		color: $color-light;
 		font-family: $font-heading;
 		font-weight: $font-heading-weight;
