@@ -93,6 +93,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/portfolio-item-bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 191076,
+		"inputAbbreviatedPath": "\/images\/portfolio-item-bg.png",
+		"outputAbbreviatedPath": "\/images\/portfolio-item-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/post-comments.png": {
 		"fileType": 32768,
 		"ignore": 0,

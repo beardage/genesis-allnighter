@@ -10,6 +10,10 @@ section.section-portfolio {
 		flex-wrap: wrap;
 
 		.portfolio-item {
+			background-image:url(/wp-content/themes/genesis-allnighter/images/portfolio-item-bg.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+
 			position: relative;
 			width: calc(50% - #{($length-small) / 2});
 			flex: 1 calc(50% - #{($length-small) / 2});
@@ -85,7 +89,7 @@ section.section-portfolio {
 				transition: bottom 500ms ease-in-out, width 500ms ease-in-out;
 			}
 			&:hover .image {
-				width: 80%;
+				width: 75%;
 				bottom: 0;
 			}
 		}
