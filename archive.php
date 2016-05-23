@@ -8,14 +8,7 @@
 // remove_action( 'genesis_before_post_content', 'genesis_post_info' );
 
 //* Remove the entry title in the entry header
-//remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
 
-add_action('genesis_after_header', 'an_blog_header');
-function an_blog_header() {
-	echo 	"<header class='entry-header'>";
-	echo		"<h1 class='entry-title' itemprop='headline'>Blog</h1>";
-	echo	"</header>";
-}
 
 
 genesis();
