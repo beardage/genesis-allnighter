@@ -36,11 +36,14 @@ function an_blog_archive_panel () {
 	$title = get_the_title();
 	$permalink = get_the_permalink();
 	$postdate = get_the_date();
-	$markup = '';
-	$markup = '<a class="overlay" href="' . $permalink . '">';
-	$markup .= 	'<h3 class="post-title">' . $title . '</h3>';
-	$markup .= '</a>';
-	$markup .= '<h4 class="post-date">' . $postdate . '</h4>';
+	$thumbnail = the_post_thumbnail('full');
+
+	$markup =	'<div class="one" style="background-image:url(' . $thumbnail . ');">';
+	$markup .= 		'<a class="overlay" href="' . $permalink . '">';
+	$markup .= 			'<h3 class="post-title">' . $title . '</h3>';
+	$markup .= 		'</a>';
+	$markup .= 		'<h4 class="post-date">' . $postdate . '</h4>';
+	$markup .= 	'</div>';
 
 	echo $markup;
 }
