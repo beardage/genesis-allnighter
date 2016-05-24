@@ -1,5 +1,7 @@
 <?php
 
+// BLOG ARCHIVE VIEW
+
 //* Remove the post meta function
 // remove_action('genesis_entry_header', 'genesis_post_info', 12);
 // remove_action('genesis_entry_footer', 'genesis_entry_footer_markup_open', 5);
@@ -38,12 +40,12 @@ function an_blog_archive_panel () {
 	$postdate = get_the_date();
 	$thumbnail = the_post_thumbnail('full');
 
-	$markup =	'<div class="one" style="background-image:url(' . $thumbnail . ');">';
-	$markup .= 		'<a class="overlay" href="' . $permalink . '">';
+	$markup =	'<a class="archive-panel one" href="' . $permalink . '" style="background-image:url(' . $thumbnail . ');">';
+	$markup .= 		'<div class="overlay">';
 	$markup .= 			'<h3 class="post-title">' . $title . '</h3>';
-	$markup .= 		'</a>';
+	$markup .= 		'</div>';
 	$markup .= 		'<h4 class="post-date">' . $postdate . '</h4>';
-	$markup .= 	'</div>';
+	$markup .= 	'</a>';
 
 	echo $markup;
 }

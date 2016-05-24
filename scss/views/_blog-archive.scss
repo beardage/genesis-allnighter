@@ -2,7 +2,25 @@
 	.entry-header {
 		padding: 0;
 		.entry-title {
-			text-align: left;
+			text-align: center;
 		}
+	}
+}
+
+.archive-panel {
+	background-size: cover;
+	background-position: top center;
+	background-color: $color-muted;
+	padding: $length-huge $length-medium;
+	margin-bottom: $length-large;
+	position: relative;
+	a.overlay {
+		
+	}
+	.post-title {
+		text-align: center;
+	}
+	.post-date {
+		text-align: center;
 	}
 }
