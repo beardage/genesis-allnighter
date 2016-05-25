@@ -179,7 +179,7 @@ $breakpoints: (
 
 // containers and shit
 
-section, #wrap, .site-header, .blog .content {
+section, #wrap, .site-header, .single .content {
 	padding-left: 12%;
 	padding-right: 12%;
 }
@@ -203,7 +203,7 @@ section, #wrap, .site-header, .blog .content {
 	.one-fourth, .three-fourths, .one-third, .two-thirds, .one-half, .one {
 		width: 100%;
 	}
-	section, #wrap, .site-header, .blog .content {
+	section, #wrap, .site-header, .single .content{
 		padding-left: 6%;
 		padding-right: 6%;
 	}
