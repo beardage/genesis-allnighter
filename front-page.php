@@ -14,7 +14,7 @@ add_action('genesis_after_header', 'an_do_hero');
 add_action('genesis_after_header', 'an_do_portfolio');
 function an_do_hero() {
 	?>
-	<section class="hero" style="background-image:url(/wp-content/themes/genesis-allnighter/images/hero.png);">
+	<section class="hero" style="background-image:url();">
 		<div class="hero-overlay">
 			<h1>ux / ui / front-end development</h1>
 		</div>
