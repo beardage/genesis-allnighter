@@ -67,11 +67,22 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/bg.png": {
+	"\/images\/bg-old.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 86226,
+		"inputAbbreviatedPath": "\/images\/bg-old.png",
+		"outputAbbreviatedPath": "\/images\/bg-old.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 134783,
 		"inputAbbreviatedPath": "\/images\/bg.png",
 		"outputAbbreviatedPath": "\/images\/bg.png",
 		"outputPathIsOutsideProject": 0,
