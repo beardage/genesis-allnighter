@@ -31,7 +31,7 @@ section.section-portfolio {
 			min-height: 250px;
 
 			cursor: pointer;
-			color: $color-light;
+			color: $color-dark;
 			text-decoration: none;
 			background-color: $color-dark;
 			border: 1px solid $color-variant-1;
@@ -86,12 +86,12 @@ section.section-portfolio {
 .single-portfolio {
 	.portfolio {
 		margin-top: 58px;
-		color: $color-light;
+		color: $color-dark;
 	}
 	.section-portfolio-content {
 		.project-title {
 			text-align: center;
-			color: $color-light;
+			color: $color-dark;
 			margin-top: $length-large;
 			margin-bottom: $length-large;
 		}
