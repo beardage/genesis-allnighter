@@ -15,12 +15,22 @@ section.section-portfolio {
 			background-repeat: no-repeat;
 
 			position: relative;
-			width: calc(50% - #{($length-small) / 2});
-			flex: 1 calc(50% - #{($length-small) / 2});
+			width: calc(33.33% - #{($length-small) / 3});
+			flex-basis: calc(33.33% - #{($length-small) / 3});
+
+
+			@include when-size-is('small-desktop') {
+				width: calc(50% - #{($length-small) / 2});
+				flex-basis: calc(50% - #{($length-small) / 2});
+				&:nth-child(2n) {
+					// 2, 4, 6
+					margin-right: 0;
+				}
+			}
 
 			@include when-size-is('handheld') {
 				width: 100%;
-				flex: 2 100%;
+				flex-basis: 100%;
 				margin-right: 0;
 			}
 
@@ -39,7 +49,7 @@ section.section-portfolio {
 			&:hover {
 				background-color: $color-variant-3;
 			}
-			&:nth-child(2n) {
+			&:nth-child(3n) {
 				// 3, 6, 9
 				margin-right: 0;
 			}
