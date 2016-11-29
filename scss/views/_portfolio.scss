@@ -15,7 +15,7 @@ section.section-portfolio {
 			background-repeat: no-repeat;
 
 			position: relative;
-			width: 33.33%;
+			width: 48%;
 
 
 
@@ -37,11 +37,12 @@ section.section-portfolio {
 			cursor: pointer;
 			color: $color-light;
 			text-decoration: none;
-			background-color: $color-dark;
-			border: 1px solid $color-variant-1;
+			background-color: $color-light;
+			border: 1px solid rgba($color-muted, .5);
 			transition: background-color 200ms ease-in-out;
+			margin: 1%;
 			&:hover {
-				background-color: $color-variant-3;
+				background-color: $color-dark;
 			}
 
 			.overlay {
@@ -59,27 +60,7 @@ section.section-portfolio {
 					margin: 0;
 				}
 			}
-			&:hover .overlay:before {
-				top: 0;
-
-			}
-
-			.image {
-				position: absolute;
-				top: 0;
-				right: 0;
-				bottom: $length-medium;
-				width: 65%;
-				background-size: cover;
-				background-position: center left;
-
-			}
-			&:hover .image {
-				width: 75%;
-				bottom: 0;
-			}
 		}
-
 	}
 }
 

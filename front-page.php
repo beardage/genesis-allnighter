@@ -36,8 +36,7 @@ function an_do_portfolio () {
 	 while( $portfolioItems->have_posts() ) {
 	   $portfolioItems->the_post();
 	   ?>
-	    <a class="portfolio-item" href="<?php the_permalink(); ?>" style="">
-			<div class="image" style="background-image:url(<?php the_field('teaser_image'); ?>);"></div>
+	    <a class="portfolio-item" href="<?php the_permalink(); ?>" style="background-image:url(<?php the_field('teaser_image'); ?>);">
 			<div class="overlay">
 			   <h5><?php the_title(); ?></h5>
 			   <p><?php the_field('teaser_description'); ?></p>
